@@ -1,0 +1,111 @@
+.productitem{
+    flex-basis: 21%;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px 2px #ccc;
+    border: 1px solid rgb(138, 136, 136);
+    
+}
+.productitem img{
+    width: 80%;
+    height: 150px;
+}
+.productitem p{
+    padding: 10px;
+}
+.productitem h3{
+    padding: 10px;
+}
+.productitem button{
+    padding: 5px;
+    background-color: blue;
+    border: none;
+    font-size: larger;
+    color: white;
+    border-radius: 5px;
+
+}
+.star{
+    color: goldenrod;
+}
+.product{
+    flex-basis: 65%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.img{
+    width: 80%;
+    height: 150px;
+}
+.cardbody{
+    box-shadow: 0px 0px 10px 2px #ccc;
+}
+.span{
+    font-size: large;
+    font-family: sans-serif;
+}
+h3{
+    font-size: large;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+footer .links {
+    display: flex;
+    gap: 15px;
+}
+
+footer .links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .links a:hover {
+    color: #f4a261;
+}
+
+footer .social-media {
+    display: flex;
+
+    gap: 10px;
+}
+footer .social-media a {
+    color: #fff;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .social-media a:hover {
+    color: #f4a261;
+}
+
+footer p {
+    margin: 10px 0 0;
+    font-size: 0.9em;
+}
