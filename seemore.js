@@ -6,20 +6,14 @@ fetch(`https://fakestoreapi.com/products/${result}`)
 .then(res => res.json())
 .then((res)=>{
         div.innerHTML += `
-     <div class="product m-5 d-flex justify-content-center gap-5 flex-wrap " >
-         <div class="card" style="width: 18rem;">
+     <div class="card" data-aos="fade-up" style="width: 18rem;">
+        <img src="${res.image}" class="card-img-top" alt="..." width=" 80%" height="150px">
+        <div class="card-body">
+          <h5 class="card-title">$${res.price}|${res.rating.rate}★★★</h5>
+          <p class="card-text">${res.title}</p>
+        </div>
     
-    <div class="cardbody">
-    <img src="${res.image}"alt="..." class="img">
-    <h3 class="card"> <span class="span">Titile:</span>${res.title}</h3>
-    <h3 class="card"> <span class="span">Category:</span> ${res.category}</h3>
-    <h3 class="card"> <span class="span">Description :</span>${res.description}</h3>
-    <h3 class="card"><span class="span">Price: $</span>${res.price}</h3>
-     
-    
-    </div>
-  </div>
-       </div>
+      </div>
         `
     })
 
